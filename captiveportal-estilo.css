@@ -1,0 +1,245 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	background-image: url(captiveportal-cp_background.jpg);
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header,main,footer {
+	display: block;
+}
+
+h1,h2,h3 {
+	font-weight: bolder;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+h1 {
+	color: #f00;
+	font-size: 38px;
+	text-shadow: 0px 4px 4px #000;
+}
+
+h2 {
+	color: #f00;
+	font-size: 34px;
+	text-shadow: 0px 4px 4px #000;
+}
+
+h3 {
+	color: #f00;
+	font-size: 28px;
+	text-shadow: 0px 2px 4px #000;
+}
+
+p {
+	color: #f00;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+
+p span {
+	color: #000;
+	text-shadow: 0px 2px 4px #f00;
+}
+
+header {
+	width: 50%;
+	max-width: 100%;
+	height: auto;
+	margin: 15px auto;
+	padding: 1%;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	-webkit-border-radius: 1.2em;
+}
+
+main {
+	width: 50%;
+	max-width: 100%;
+	height: auto;
+	margin: 0px auto;
+	padding: 1%;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	-webkit-border-radius: 1.2em;
+}
+
+footer {
+	width: 50%;
+	max-width: 100%;
+	height: auto;
+	margin: 15px auto;
+	padding: 1%;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	-webkit-border-radius: 1.2em;
+}
+
+label {
+	color: #000;
+	font-size: 22px;
+	text-align: center;
+	display: block;
+	margin: 12px auto;
+	text-shadow: 0px 2px 4px #f00;
+}
+
+input[type="text"], input[type="password"] {
+	width: 55%;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0px auto;
+	padding: 1.2%;
+	color: #f00;
+	font-weight: bolder;
+	border: 1px solid transparent;
+	background-color: #ABE7FD;
+}
+
+input[type="submit"], input[type="button"] {
+	width: 34%;
+	max-width: 100%;
+	height: auto;
+	color: #fff;
+	cursor: pointer;
+	margin: 8px 4px;
+	padding: 12px;
+	font-weight: bolder;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	background-color: #7A7979;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+form {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: 12px auto;
+	padding: 1%;
+}
+
+.botones {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: 14px auto;
+	padding: 0px;
+	text-align: center;
+}
+
+.contenedor {
+	width: 98%;
+	max-width: 100%;
+	height: auto;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.mensaje_error {
+	color: #f00;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bolder;
+	margin: 12px auto;
+	display: block;
+}
+
+/*--- RESPONSIVE LAYOOUT ---*/
+
+@media all and (max-width: 1096px) {
+	header {
+		width: 95%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	main {
+		width: 95%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	input[type="text"], input[type="password"] {
+		width: 70%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	input[type="submit"], input[type="button"] {
+		width: 70%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	footer {
+		width: 95%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 760px) {
+	header {
+		width: 95%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	main {
+		width: 95%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	input[type="text"], input[type="password"] {
+		width: 70%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	input[type="submit"], input[type="button"] {
+		width: 70%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	footer {
+		width: 95%;
+		max-width: 100%;
+		height: auto;
+	}
+}

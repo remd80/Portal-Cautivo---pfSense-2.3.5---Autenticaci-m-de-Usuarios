@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-HN">
+<head>
+<meta charset="UTF-8">
+<title>Portal Cautivo - Usuarios</title>
+<meta name="author" content="Roberto E. Murillo D." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Autenticación de Usuarios con Portal Cautivo" />
+<meta name="keywords" content="autenticación de usuarios, portal cautivo, autenticación con portal cautivo" />
+<link rel="stylesheet" type="text/css" href="captiveportal-estilo.css" media="screen" />
+</head>
+<body>
+<div class="contenedor">
+	<header>
+		<h1>Portal Cautivo</h1>
+		<h2>Autenticación de Usuarios</h2>
+	</header>
+	<main>
+		<h3>Credenciales Incorrectos!</h3>
+		<form method="post" action="$PORTAL_ACTION$" onsubmit="return validacion_usuarios()" enctype="application/x-www-form-urlencoded">
+			<label for="usuario">Usuario:</label>
+			<input type="text" id="usuario" name="auth_user" placeholder="Nombre del Usuario... " />
+			<span id="nombre_error" class="mensaje_error"></span>
+			<label for="clave">Contraseña:</label>
+			<input type="password" id="clave" name="auth_pass" placeholder="Contraseña del Usuario... " />
+			<span id="clave_error" class="mensaje_error"></span>
+			<div class="botones">
+				<input type="hidden" name="redirurl" value="$PORTAL_REDIRURL$" />
+				<input type="hidden" name="zone" value="$PORTAL_ZONE$" />
+				<input type="submit" name="accept" value="Acceder" />
+				<input type="button" id="borrar" value="Borrar Todo" />
+			</div>
+		</form>
+	</main>
+	<footer>
+		<p>Creado por <span>Roberto E. Murillo D.</span></p>
+		<p>Generado por <span>pfSense 2.3.5 i386</span></p>
+	</footer>
+</div>
+<script type="text/javascript" src="captiveportal-validacion_usuarios.js"></script>
+</body>
+</html>
