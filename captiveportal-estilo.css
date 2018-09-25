@@ -110,7 +110,7 @@ label {
 }
 
 input[type="text"], input[type="password"] {
-	width: 55%;
+	width: 50%;
 	max-width: 100%;
 	height: auto;
 	display: block;
